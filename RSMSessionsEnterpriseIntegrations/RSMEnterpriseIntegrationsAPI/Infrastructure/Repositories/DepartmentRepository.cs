@@ -2,7 +2,7 @@
 {
     using RSMEnterpriseIntegrationsAPI.Domain.Interfaces;
 
-    public class DepartmentRepositories : IDepartmentRepository
+    public class DepartmentRepository : IDepartmentRepository
     {
     }
 }
