@@ -1,28 +1,29 @@
-﻿namespace RSMEnterpriseIntegrationsAPI.Infrastructure
+﻿namespace Infrastructure.Context
 {
     using Microsoft.EntityFrameworkCore;
 
-    using RSMEnterpriseIntegrationsAPI.Domain.Models;
+    using Domain.Models;
 
     using System.Reflection;
 
     public class AdvWorksDbContext : DbContext
     {
         public AdvWorksDbContext()
-        {            
+        {
         }
 
         public AdvWorksDbContext(DbContextOptions<AdvWorksDbContext> options)
-            : base(options) 
+            : base(options)
         {
         }
 
         public virtual DbSet<Department> Departments { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
-        
+
     }
 }

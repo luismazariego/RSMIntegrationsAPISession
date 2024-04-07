@@ -1,9 +1,8 @@
 ﻿namespace RSMEnterpriseIntegrationsAPI.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
-
-    using RSMEnterpriseIntegrationsAPI.Application.DTOs;
-    using RSMEnterpriseIntegrationsAPI.Domain.Interfaces;
+    using Application.Interfaces;
+    using Application.DTOs;
 
     [Route("api/[controller]")]
     [ApiController]

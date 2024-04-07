@@ -1,9 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 
-using RSMEnterpriseIntegrationsAPI.Application.Services;
-using RSMEnterpriseIntegrationsAPI.Domain.Interfaces;
-using RSMEnterpriseIntegrationsAPI.Infrastructure;
-using RSMEnterpriseIntegrationsAPI.Infrastructure.Repositories;
+using Domain.Interfaces;
+
+using Application.Interfaces;
+using Application.Services;
+
+using Infrastructure.Context;
+using Infrastructure.Repositories;
+
 using RSMEnterpriseIntegrationsAPI.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);

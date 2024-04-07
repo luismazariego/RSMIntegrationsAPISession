@@ -1,9 +1,9 @@
-﻿namespace RSMEnterpriseIntegrationsAPI.Infrastructure.Configurations
+﻿namespace Infrastructure.Configurations
 {
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-    using RSMEnterpriseIntegrationsAPI.Domain.Models;
+    using Domain.Models;
 
     public class DepartmentConfiguration : IEntityTypeConfiguration<Department>
     {
@@ -11,8 +11,8 @@
         {
             builder.ToTable(nameof(Department), "HumanResources");
 
-            builder.HasKey(e => e.DepartmentId);
-            builder.Property(e => e.DepartmentId).HasColumnName("DepartmentID");
+            builder.HasKey(e => e.Id);
+            builder.Property(e => e.Id).HasColumnName("DepartmentID");
             builder.Property(e => e.Name).IsRequired();
             builder.Property(e => e.GroupName).IsRequired();
         }

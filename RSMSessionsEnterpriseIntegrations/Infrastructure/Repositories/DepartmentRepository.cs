@@ -1,12 +1,9 @@
-﻿namespace RSMEnterpriseIntegrationsAPI.Infrastructure.Repositories
+﻿namespace Infrastructure.Repositories
 {
     using Microsoft.EntityFrameworkCore;
-
-    using RSMEnterpriseIntegrationsAPI.Domain.Interfaces;
-    using RSMEnterpriseIntegrationsAPI.Domain.Models;
-
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
+    using Domain.Interfaces;
+    using Domain.Models;
+    using Infrastructure.Context;
 
     public class DepartmentRepository : IDepartmentRepository
     {
@@ -41,7 +38,7 @@
         {
             return await _context.Departments
                 .AsNoTracking()
-                .FirstOrDefaultAsync(d=>d.DepartmentId == id);
+                .FirstOrDefaultAsync(d=>d.Id == id);
         }
 
         public async Task<int> UpdateDepartment(Department department)

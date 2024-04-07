@@ -1,4 +1,4 @@
-﻿namespace RSMEnterpriseIntegrationsAPI.Application.DTOs
+﻿namespace Application.DTOs
 {
     public class GetDepartmentDto
     {

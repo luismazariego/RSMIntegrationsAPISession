@@ -1,6 +1,6 @@
-﻿namespace RSMEnterpriseIntegrationsAPI.Domain.Interfaces
+﻿namespace Application.Interfaces
 {
-    using RSMEnterpriseIntegrationsAPI.Application.DTOs;
+    using Application.DTOs;
 
     public interface IDepartmentService
     {

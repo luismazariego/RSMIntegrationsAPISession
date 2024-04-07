@@ -1,6 +1,6 @@
 ﻿namespace RSMEnterpriseIntegrationsAPI.Middleware
 {
-    using RSMEnterpriseIntegrationsAPI.Application.Exceptions;
+    using Application.Exceptions;
 
     using System.Net;
     using System.Text.Json;

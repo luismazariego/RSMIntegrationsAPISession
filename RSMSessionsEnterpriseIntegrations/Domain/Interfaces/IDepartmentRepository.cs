@@ -1,6 +1,6 @@
-﻿namespace RSMEnterpriseIntegrationsAPI.Domain.Interfaces
+﻿namespace Domain.Interfaces
 {
-    using RSMEnterpriseIntegrationsAPI.Domain.Models;
+    using Domain.Models;
 
     public interface IDepartmentRepository
     {

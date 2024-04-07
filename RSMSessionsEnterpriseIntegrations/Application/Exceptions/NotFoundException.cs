@@ -1,4 +1,4 @@
-﻿namespace RSMEnterpriseIntegrationsAPI.Application.Exceptions
+﻿namespace Application.Exceptions
 {
     public class NotFoundException : Exception
     {

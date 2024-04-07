@@ -1,10 +1,10 @@
-﻿namespace RSMEnterpriseIntegrationsAPI.Application.Services
+﻿namespace Application.Services
 {
-    using RSMEnterpriseIntegrationsAPI.Application.DTOs;
-    using RSMEnterpriseIntegrationsAPI.Application.Exceptions;
-    using RSMEnterpriseIntegrationsAPI.Domain.Interfaces;
-    using RSMEnterpriseIntegrationsAPI.Domain.Models;
-
+    using Application.DTOs;
+    using Application.Exceptions;
+    using Application.Interfaces;
+    using Domain.Interfaces;
+    using Domain.Models;
     using System.Collections.Generic;
     using System.Threading.Tasks;
 
@@ -55,7 +55,7 @@
                 {
                     Name = department.Name,
                     GroupName = department.GroupName,
-                    DepartmentId = department.DepartmentId
+                    DepartmentId = department.Id
                 };
 
                 departmentsDto.Add(dto);
@@ -86,7 +86,7 @@
             
             GetDepartmentDto dto = new()
             {
-                DepartmentId = department.DepartmentId,
+                DepartmentId = department.Id,
                 Name = department.Name,
                 GroupName = department.GroupName
             };
